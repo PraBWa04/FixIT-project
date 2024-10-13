@@ -66,3 +66,42 @@
     margin-top: 10px;
   }
 }
+
+.main-background {
+  background-image: url("pictures/background\ img.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.main-background h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.search-bar {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.search-bar input[type="text"] {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
+
+.main-background p a {
+  color: #ddd;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.main-background p a:hover {
+  color: #fff;
+}
