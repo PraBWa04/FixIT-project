@@ -105,3 +105,18 @@
 .main-background p a:hover {
   color: #fff;
 }
+
+.main-text {
+  text-align: center;
+}
+
+.features-section {
+  display: flex;
+  justify-content: center;
+}
+
+.card-1,
+.card-2,
+.card-3 {
+  box-shadow: #333;
+}
