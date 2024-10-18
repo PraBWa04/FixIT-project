@@ -14,37 +14,179 @@
             class="logotype"
             src="pictures/logotype.png"
             alt="logotype FixIt"
+            loading="lazy"
           />
         </a>
-        <a href="">Our services</a>
-        <a href="">Contacts</a>
-        <a href="">About us</a>
-        <div class="search-container">Search <input type="text" /></div>
+        <a href="#services">Our services</a>
+        <a href="#contacts">Contacts</a>
+        <a href="#about">About us</a>
+        <div class="search-container">
+          Search <input type="text" aria-label="Site search" />
+        </div>
       </nav>
     </header>
-    <main></main>
-    <section class="main-background">
-      <h1>Explore a World of Repair</h1>
-      <div class="search-bar">
-        <input type="text" placeholder="Try Car and Truc battery" />
+
+    <main>
+      <section class="main-background">
+        <h1>Explore a World of Repair</h1>
+        <div class="search-bar">
+          <input
+            type="text"
+            placeholder="Try Car and Truck battery"
+            aria-label="Search for products"
+          />
+        </div>
+        <p><a href="pictures/background img.webp">or explore categories</a></p>
+      </section>
+
+      <div class="main-text">
+        <h1>Never take broken for an answer</h1>
+        <p>
+          Get the instructions you need with quality repair parts and tools and
+          the expertise of a robust community.
+        </p>
       </div>
-      <p><a href="pictures/background img.webp">or explore categories</a></p>
+
+      <section class="features-section" id="services">
+        <div class="card">
+          <img
+            src="pictures/card-1-background-image.webp"
+            alt="Hands repairing a laptop with tools."
+            loading="lazy"
+          />
+          <h3>Step-by-Step Guides</h3>
+          <p>
+            Learn how to fix anything with simple, easy-to-follow instructions
+            created by real fixers.
+          </p>
+          <button class="card-button">Find a Guide</button>
+        </div>
+        <div class="card">
+          <img
+            src="pictures/card-2-background-image.webp"
+            alt="Repair tools and electronic parts on a workbench."
+            loading="lazy"
+          />
+          <h3>Quality Parts and Tools</h3>
+          <p>
+            Precision tools and thousands of parts to get the job done, backed
+            by our Lifetime Guarantee.
+          </p>
+          <button class="card-button">Shop our store</button>
+        </div>
+        <div class="card">
+          <img
+            src="pictures/card-3-background-image.webp"
+            alt="Community workshop with people fixing devices."
+            loading="lazy"
+          />
+          <h3>A Community of Fixers</h3>
+          <p>
+            No one knows how to fix everything, but everyone knows how to fix
+            something.
+          </p>
+          <button class="card-button">Fix the World</button>
+        </div>
+      </section>
+    </main>
+
+    <section class="statistics-bar">
+      <div class="statistics">
+        <h3>112,646</h3>
+        <p>Free manuals</p>
+      </div>
+      <div class="statistics">
+        <h3>223,635</h3>
+        <p>Solutions</p>
+      </div>
+      <div class="statistics">
+        <h3>59,881</h3>
+        <p>Devices</p>
+      </div>
+      <div class="statistics">
+        <h3>100M+</h3>
+        <p>Repairs</p>
+      </div>
     </section>
-    <div class="main-text"><p>
-    <h1>Never take broken for an answer</h1>
-    <p>Get the instructions you need with quality repair parts and tools and the expertise of a robust community.</p>
-    </p></div>
-    <section class="features-section">
-      <div class="card-1"><img src="pictures/card-1-background-image.webp" alt="Hands repairing a laptop with tools."><h3>Step-by-Step Guides</h3>
-        <p>Learn how to fix anything with simple, easy-to-follow instructions created by real fixers.</p>
-      <button class="button-card-1">Find a Guide</button></div>
-      <div class="card-2"><img src="pictures/card-2-background-image.webp" alt="Repair tools and electronic parts on a workbench."><h3>Quality Parts and Tools</h3>
-      <p>Precision tools and thousands of parts to get the job done, backed by our Lifetime Guarantee.</p>
-    <button class="button-card-2">Shop our store</button></div>
-    <div class="card-3"><img src="pictures/card-3-background-image.webp" alt="Community workshop with people fixing devices."><h3>A Community of Fixers</h3>
-    <p>No one knows how to fix everything, but everyone knows how to fix something.</p>
-  <button class="button-card-3">Fix the World</button></div>
+
+    <div class="repair-guides">
+      <h2>Repair guides for every thing, written by everyone.</h2>
+      <p>
+        We help thousands of people repair their things every day. Every time
+        you fix something, you help the planet.
+      </p>
+    </div>
+
+    <section class="categories-section">
+      <div class="categories">
+        <img src="pictures/apparel-picture.jpg" alt="Apparel picture" />Apparel
+      </div>
+      <div class="categories">
+        <img
+          src="pictures/appliance-picture.jpg"
+          alt="Appliance picture"
+        />Appliance
+      </div>
+      <div class="categories">
+        <img src="pictures/camera-picture.jpg" alt="Camera picture" />Camera
+      </div>
+      <div class="categories">
+        <img src="pictures/car's-picture.jpg" alt="Car and Truck picture" />Car
+        and Truck
+      </div>
+      <div class="categories">
+        <img
+          src="pictures/computer-hardware-picture.jpg"
+          alt="Computer Hardware picture"
+        />Computer Hardware
+      </div>
+      <div class="categories">
+        <img
+          src="pictures/elektronics-picture.jpg"
+          alt="Elektronics picture"
+        />Elektronics
+      </div>
+      <div class="categories">
+        <img
+          src="pictures/game-console-picture.jpg"
+          alt="Game Console picture"
+        />Game Console
+      </div>
+      <div class="categories">
+        <img
+          src="pictures/household-picture.jpg"
+          alt="Household picture"
+        />Household
+      </div>
+      <div class="categories">
+        <img src="pictures/mac-picture.jpg" alt="Mac picture" />Mac
+      </div>
+      <div class="categories">
+        <img
+          src="pictures/medical-device-picture.jpg"
+          alt="Medical Device"
+        />Medical Device
+      </div>
+      <div class="categories">
+        <img src="pictures/pc-picture.jpg" alt="PC picture" />PC
+      </div>
+      <div class="categories">
+        <img src="pictures/phone-picture.jpg" alt="Phone picture" />Phone
+      </div>
+      <div class="categories">
+        <img src="pictures/skills-picture.jpg" alt="Skills picture" />Skills
+      </div>
+      <div class="categories">
+        <img src="pictures/tablet-picture.jpg" alt="Tablet picture" />Tablet
+      </div>
+      <div class="categories">
+        <img src="pictures/tool-picture.jpg" alt="Tool picture" />Tool
+      </div>
+      <div class="categories">
+        <img src="pictures/vehicle-picture.jpg" alt="Vehicle picture" />Vehicle
+      </div>
     </section>
+
     <script src="script.js"></script>
   </body>
 </html>
