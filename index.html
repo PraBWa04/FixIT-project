@@ -3,17 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
     <title>FixIt</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="navigation-block">
       <nav>
-        <a href="http://127.0.0.1:5500/index.html" class="logo-link">
+        <a href="#home" class="logo-link">
           <img
             class="logotype"
             src="pictures/logotype.png"
-            alt="logotype FixIt"
+            alt="FixIt Logotype"
             loading="lazy"
           />
         </a>
@@ -27,7 +27,7 @@
     </header>
 
     <main>
-      <section class="main-background">
+      <section class="main-background" id="home">
         <h1>Explore a World of Repair</h1>
         <div class="search-bar">
           <input
@@ -36,9 +36,7 @@
             aria-label="Search for products"
           />
         </div>
-        <p>
-          <a href="pictures/background%20img.webp">or explore categories</a>
-        </p>
+        <p><a href="#">or explore categories</a></p>
       </section>
 
       <div class="main-text">
@@ -61,7 +59,9 @@
             Learn how to fix anything with simple, easy-to-follow instructions
             created by real fixers.
           </p>
-          <button class="card-button">Find a Guide</button>
+          <button class="card-button" aria-label="Find a guide">
+            Find a Guide
+          </button>
         </div>
         <div class="card">
           <img
@@ -74,7 +74,9 @@
             Precision tools and thousands of parts to get the job done, backed
             by our Lifetime Guarantee.
           </p>
-          <button class="card-button">Shop our store</button>
+          <button class="card-button" aria-label="Shop our store">
+            Shop our store
+          </button>
         </div>
         <div class="card">
           <img
@@ -87,7 +89,9 @@
             No one knows how to fix everything, but everyone knows how to fix
             something.
           </p>
-          <button class="card-button">Fix the World</button>
+          <button class="card-button" aria-label="Fix the world">
+            Fix the World
+          </button>
         </div>
       </section>
     </main>
@@ -112,7 +116,7 @@
     </section>
 
     <div class="repair-guides">
-      <h2>Repair guides for every thing, written by everyone.</h2>
+      <h2>Repair guides for everything, written by everyone.</h2>
       <p>
         We help thousands of people repair their things every day. Every time
         you fix something, you help the planet.
@@ -122,76 +126,94 @@
     <section class="categories-section">
       <div class="categories-grid">
         <div class="categories">
-          <img src="pictures/apparel-picture.jpg" alt="Apparel picture" />
+          <img
+            src="pictures/apparel-picture.jpg"
+            alt="Apparel products image"
+          />
           <p>Apparel</p>
         </div>
         <div class="categories">
-          <img src="pictures/appliance-picture.jpg" alt="Appliance picture" />
+          <img
+            src="pictures/appliance-picture.jpg"
+            alt="Appliance products image"
+          />
           <p>Appliance</p>
         </div>
         <div class="categories">
-          <img src="pictures/camera-picture.jpg" alt="Camera picture" />
+          <img src="pictures/camera-picture.jpg" alt="Camera products image" />
           <p>Camera</p>
         </div>
         <div class="categories">
-          <img src="pictures/car's-picture.jpg" alt="Car and Truck picture" />
+          <img
+            src="pictures/car's-picture.jpg"
+            alt="Car and Truck products image"
+          />
           <p>Car and Truck</p>
         </div>
         <div class="categories">
           <img
             src="pictures/computer-hardware-picture.jpg"
-            alt="Computer Hardware picture"
+            alt="Computer Hardware products image"
           />
           <p>Computer Hardware</p>
         </div>
         <div class="categories">
           <img
             src="pictures/elektronics-picture.jpg"
-            alt="Electronics picture"
+            alt="Electronics products image"
           />
           <p>Electronics</p>
         </div>
         <div class="categories">
           <img
             src="pictures/game-console-picture.jpg"
-            alt="Game Console picture"
+            alt="Game Console products image"
           />
           <p>Game Console</p>
         </div>
         <div class="categories">
-          <img src="pictures/household-picture.jpg" alt="Household picture" />
+          <img
+            src="pictures/household-picture.jpg"
+            alt="Household products image"
+          />
           <p>Household</p>
         </div>
         <div class="categories">
-          <img src="pictures/mac-picture.jpg" alt="Mac picture" />
+          <img src="pictures/mac-picture.jpg" alt="Mac products image" />
           <p>Mac</p>
         </div>
         <div class="categories">
-          <img src="pictures/medical-device-picture.jpg" alt="Medical Device" />
-          <p>Medical Device</p>
+          <img
+            src="pictures/medical-device-picture.jpg"
+            alt="Medical Devices image"
+          />
+          <p>Medical Devices</p>
         </div>
         <div class="categories">
-          <img src="pictures/pc-picture.jpg" alt="PC picture" />
+          <img src="pictures/pc-picture.jpg" alt="PC products image" />
           <p>PC</p>
         </div>
         <div class="categories">
-          <img src="pictures/phone-picture.jpg" alt="Phone picture" />
+          <img src="pictures/phone-picture.jpg" alt="Phone products image" />
           <p>Phone</p>
         </div>
         <div class="categories">
-          <img src="pictures/skills-picture.jpg" alt="Skills picture" />
+          <img src="pictures/skills-picture.jpg" alt="Skills products image" />
           <p>Skills</p>
         </div>
         <div class="categories">
-          <img src="pictures/tablet-picture.jpg" alt="Tablet picture" />
+          <img src="pictures/tablet-picture.jpg" alt="Tablet products image" />
           <p>Tablet</p>
         </div>
         <div class="categories">
-          <img src="pictures/tool-picture.jpg" alt="Tool picture" />
+          <img src="pictures/tool-picture.jpg" alt="Tool products image" />
           <p>Tool</p>
         </div>
         <div class="categories">
-          <img src="pictures/vehicle-picture.jpg" alt="Vehicle picture" />
+          <img
+            src="pictures/vehicle-picture.jpg"
+            alt="Vehicle products image"
+          />
           <p>Vehicle</p>
         </div>
       </div>
@@ -201,7 +223,9 @@
       <div class="text-content">
         <h2>Repair Anywhere, Anytime</h2>
         <h3>Portable soldering for limitless fixing freedom.</h3>
-        <button class="fixhub-button">Reserve FixHub Now</button>
+        <button class="fixhub-button" aria-label="Reserve FixHub">
+          Reserve FixHub Now
+        </button>
       </div>
     </section>
 
