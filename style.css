@@ -15,6 +15,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .logotype {
@@ -84,6 +86,32 @@ body {
     width: 100%;
     margin-top: 10px;
   }
+
+  .features-section {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .second-background {
+    height: 50vh;
+    max-height: 400px;
+  }
+
+  .text-content h2 {
+    font-size: 2rem;
+  }
+
+  .text-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .fixhub-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .allies-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
 }
 
 .main-background {
@@ -127,6 +155,20 @@ body {
 
 .main-text {
   text-align: center;
+  padding: 40px 20px;
+}
+
+.main-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.main-text p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .features-section {
@@ -141,7 +183,7 @@ body {
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   padding: 20px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
   border-radius: 8px;
 }
 
@@ -167,6 +209,7 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .statistics-bar {
@@ -174,6 +217,7 @@ body {
   justify-content: center;
   gap: 20px;
   padding: 40px 20px;
+  background-color: #fff;
 }
 
 .statistics {
@@ -182,11 +226,20 @@ body {
   transition: transform 0.3s;
   border-radius: 8px;
   text-align: center;
+  width: 100%;
+  max-width: 200px;
 }
 
 .statistics h3 {
   color: var(--main-color);
   font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.statistics p {
+  color: #333;
+  font-size: 1rem;
 }
 
 .statistics:hover {
@@ -195,10 +248,37 @@ body {
 
 .repair-guides {
   text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.repair-guides h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.repair-guides p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
 }
 
 .categories-section {
   padding: 40px 20px;
+  background-color: #fff;
+}
+
+.categories-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.categories-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 40px;
 }
 
 .categories-grid {
@@ -221,6 +301,8 @@ body {
   width: 60px;
   height: 60px;
   margin-right: 20px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 .categories p {
@@ -233,18 +315,6 @@ body {
 .categories:hover {
   transform: translateY(-5px);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 768px) {
-  .categories-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .categories img {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
-  }
 }
 
 .second-background {
@@ -276,6 +346,7 @@ body {
 .text-content h2 {
   font-size: 3rem;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .text-content h3 {
@@ -284,7 +355,7 @@ body {
 }
 
 .fixhub-button {
-  background-color: #007bff;
+  background-color: var(--main-color);
   color: white;
   padding: 12px 24px;
   border: none;
@@ -295,10 +366,75 @@ body {
 }
 
 .fixhub-button:hover {
-  background-color: #0056b3;
+  background-color: var(--hover-color);
+}
+
+.our-allies {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.our-allies h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.our-allies p {
+  font-size: 1rem;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.allies-section {
+  padding: 40px 20px;
+}
+
+.allies-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  justify-items: center;
+  align-items: center;
+}
+
+.allies-grid img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (max-width: 768px) {
+  .allies-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .logotype {
+    width: 60px;
+    height: 60px;
+  }
+
+  .navigation-block nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navigation-block nav a {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .features-section {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
   .second-background {
     height: 50vh;
     max-height: 400px;
@@ -315,5 +451,15 @@ body {
   .fixhub-button {
     padding: 10px 20px;
     font-size: 0.9rem;
+  }
+
+  .allies-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .categories img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
   }
 }
