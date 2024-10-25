@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FixIt</title>
+    <title>FixIt - Quality Repair Solutions</title>
     <link rel="stylesheet" href="style.css" />
     <meta
       name="description"
-      content="FixIt - Explore repair guides, quality parts, and join a community of fixers. We provide step-by-step instructions for fixing anything, backed by a global community of experts."
+      content="Explore repair guides, quality parts, and join a community of fixers. Step-by-step instructions for fixing anything, backed by a global community of experts."
     />
   </head>
   <body>
@@ -17,15 +17,22 @@
           <img
             class="logotype"
             src="pictures/logotype.png"
-            alt="FixIt company logotype"
+            alt="FixIt company logo"
             loading="lazy"
           />
         </a>
-        <a href="#services">Our services</a>
-        <a href="#contacts">Contacts</a>
-        <a href="#about">About us</a>
+        <ul class="nav-links">
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
         <div class="search-container">
-          Search <input type="text" aria-label="Search site content" />
+          <label for="search-input" class="sr-only">Search</label>
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search site content"
+          />
         </div>
       </nav>
     </header>
@@ -43,34 +50,34 @@
         <p><a href="#">or explore categories</a></p>
       </section>
 
-      <div class="main-text">
-        <h1>Never take broken for an answer</h1>
+      <section class="main-text">
+        <h1>Never Take Broken for an Answer</h1>
         <p>
-          Get the instructions you need with quality repair parts and tools and
+          Get the instructions you need with quality repair parts, tools, and
           the expertise of a robust community.
         </p>
-      </div>
+      </section>
 
       <section class="features-section" id="services">
         <div class="card">
           <img
             src="pictures/card-1-background-image.webp"
-            alt="Hands repairing a laptop with tools."
+            alt="Hands repairing a laptop with tools"
             loading="lazy"
           />
           <h3>Step-by-Step Guides</h3>
           <p>
-            Learn how to fix anything with simple, easy-to-follow instructions
-            created by real fixers.
+            Learn how to fix anything with easy-to-follow instructions created
+            by real fixers.
           </p>
-          <button class="card-button" aria-label="Click to find a guide">
+          <button class="card-button" aria-label="Find a guide">
             Find a Guide
           </button>
         </div>
         <div class="card">
           <img
             src="pictures/card-2-background-image.webp"
-            alt="Repair tools and electronic parts on a workbench."
+            alt="Repair tools and parts on a workbench"
             loading="lazy"
           />
           <h3>Quality Parts and Tools</h3>
@@ -78,14 +85,14 @@
             Precision tools and thousands of parts to get the job done, backed
             by our Lifetime Guarantee.
           </p>
-          <button class="card-button" aria-label="Click to shop our store">
-            Shop our store
+          <button class="card-button" aria-label="Shop our store">
+            Shop Our Store
           </button>
         </div>
         <div class="card">
           <img
             src="pictures/card-3-background-image.webp"
-            alt="Community workshop with people fixing devices."
+            alt="Community workshop with people fixing devices"
             loading="lazy"
           />
           <h3>A Community of Fixers</h3>
@@ -93,7 +100,7 @@
             No one knows how to fix everything, but everyone knows how to fix
             something.
           </p>
-          <button class="card-button" aria-label="Click to join the community">
+          <button class="card-button" aria-label="Join the community">
             Fix the World
           </button>
         </div>
@@ -119,105 +126,90 @@
       </div>
     </section>
 
-    <div class="repair-guides">
-      <h2>Repair guides for everything, written by everyone.</h2>
+    <section class="repair-guides">
+      <h2>Repair Guides for Everything, Written by Everyone</h2>
       <p>
         We help thousands of people repair their things every day. Every time
         you fix something, you help the planet.
       </p>
-    </div>
+    </section>
 
     <section class="categories-section">
       <div class="categories-grid">
-        <div class="categories">
-          <img
-            src="pictures/apparel-picture.jpg"
-            alt="Apparel products image"
-          />
+        <div class="category">
+          <img src="pictures/apparel-picture.jpg" alt="Apparel products" />
           <p>Apparel</p>
         </div>
-        <div class="categories">
-          <img
-            src="pictures/appliance-picture.jpg"
-            alt="Appliance products image"
-          />
+        <div class="category">
+          <img src="pictures/appliance-picture.jpg" alt="Appliance products" />
           <p>Appliance</p>
         </div>
-        <div class="categories">
-          <img src="pictures/camera-picture.jpg" alt="Camera products image" />
+        <div class="category">
+          <img src="pictures/camera-picture.jpg" alt="Camera products" />
           <p>Camera</p>
         </div>
-        <div class="categories">
-          <img
-            src="pictures/car's-picture.jpg"
-            alt="Car and Truck products image"
-          />
+        <div class="category">
+          <img src="pictures/car's-picture.jpg" alt="Car and Truck products" />
           <p>Car and Truck</p>
         </div>
-        <div class="categories">
+        <div class="category">
           <img
             src="pictures/computer-hardware-picture.jpg"
-            alt="Computer Hardware products image"
+            alt="Computer Hardware products"
           />
           <p>Computer Hardware</p>
         </div>
-        <div class="categories">
+        <div class="category">
           <img
             src="pictures/elektronics-picture.jpg"
-            alt="Electronics products image"
+            alt="Electronics products"
           />
           <p>Electronics</p>
         </div>
-        <div class="categories">
+        <div class="category">
           <img
             src="pictures/game-console-picture.jpg"
-            alt="Game Console products image"
+            alt="Game Console products"
           />
           <p>Game Console</p>
         </div>
-        <div class="categories">
-          <img
-            src="pictures/household-picture.jpg"
-            alt="Household products image"
-          />
+        <div class="category">
+          <img src="pictures/household-picture.jpg" alt="Household products" />
           <p>Household</p>
         </div>
-        <div class="categories">
-          <img src="pictures/mac-picture.jpg" alt="Mac products image" />
+        <div class="category">
+          <img src="pictures/mac-picture.jpg" alt="Mac products" />
           <p>Mac</p>
         </div>
-        <div class="categories">
+        <div class="category">
           <img
             src="pictures/medical-device-picture.jpg"
-            alt="Medical Devices image"
+            alt="Medical Devices"
           />
           <p>Medical Devices</p>
         </div>
-        <div class="categories">
-          <img src="pictures/pc-picture.jpg" alt="PC products image" />
+        <div class="category">
+          <img src="pictures/pc-picture.jpg" alt="PC products" />
           <p>PC</p>
         </div>
-        <div class="categories">
-          <img src="pictures/phone-picture.jpg" alt="Phone products image" />
+        <div class="category">
+          <img src="pictures/phone-picture.jpg" alt="Phone products" />
           <p>Phone</p>
         </div>
-        <div class="categories">
-          <img src="pictures/skills-picture.jpg" alt="Skills products image" />
+        <div class="category">
+          <img src="pictures/skills-picture.jpg" alt="Skills products" />
           <p>Skills</p>
         </div>
-        <div class="categories">
-          <img src="pictures/tablet-picture.jpg" alt="Tablet products image" />
+        <div class="category">
+          <img src="pictures/tablet-picture.jpg" alt="Tablet products" />
           <p>Tablet</p>
         </div>
-        <div class="categories">
-          <img src="pictures/tool-picture.jpg" alt="Tool products image" />
+        <div class="category">
+          <img src="pictures/tool-picture.jpg" alt="Tool products" />
           <p>Tool</p>
         </div>
-        <div class="categories">
-          <img
-            src="pictures/vehicle-picture.jpg"
-            alt="Vehicle products image"
-          />
+        <div class="category">
+          <img src="pictures/vehicle-picture.jpg" alt="Vehicle products" />
           <p>Vehicle</p>
         </div>
       </div>
@@ -233,20 +225,17 @@
       </div>
     </section>
 
-    <div class="our-allies">
+    <section class="our-allies">
       <h3>Our Allies</h3>
       <p>
         iFixit works with some manufacturers who are committed to making your
         stuff easier to fix.
       </p>
-    </div>
+    </section>
 
     <section class="allies-section">
       <div class="allies-grid">
-        <img
-          src="pictures/google.jpg"
-          alt="Google, one of our partners in repair"
-        />
+        <img src="pictures/google.jpg" alt="Google, one of our partners" />
         <img src="pictures/valve.jpg" alt="Valve, technology repair partner" />
         <img
           src="pictures/lenovo.jpg"

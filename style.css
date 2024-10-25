@@ -9,12 +9,12 @@
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: var(--background-color);
   color: var(--text-color);
 }
@@ -22,19 +22,10 @@ body {
 .logotype {
   width: 80px;
   height: 80px;
-  vertical-align: middle;
 }
 
 .navigation-block {
   background-color: #333;
-  color: var(--primary-font-color);
-}
-
-.navigation-block a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  margin-right: 20px;
   color: var(--primary-font-color);
 }
 
@@ -45,7 +36,19 @@ body {
   padding: 10px 20px;
 }
 
-.navigation-block a:hover {
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: var(--primary-font-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
   color: var(--main-color);
 }
 
@@ -53,65 +56,16 @@ body {
   border-radius: 30px;
   background-color: #f0f0f0;
   padding: 5px 10px;
-  margin-left: auto;
-  color: black;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   max-width: 300px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.search-container input[type="text"] {
+.search-container input {
   border: none;
   outline: none;
   padding-left: 5px;
-}
-
-@media (max-width: 768px) {
-  .logotype {
-    width: 60px;
-    height: 60px;
-  }
-
-  .navigation-block nav {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .navigation-block nav a {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-
-  .search-container {
-    width: 100%;
-    margin-top: 10px;
-  }
-
-  .features-section {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  }
-
-  .second-background {
-    height: 50vh;
-    max-height: 400px;
-  }
-
-  .text-content h2 {
-    font-size: 2rem;
-  }
-
-  .text-content h3 {
-    font-size: 1.2rem;
-  }
-
-  .fixhub-button {
-    padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-
-  .allies-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
 }
 
 .main-background {
@@ -134,7 +88,7 @@ body {
   margin: 0 auto;
 }
 
-.search-bar input[type="text"] {
+.search-bar input {
   width: 100%;
   padding: 15px 20px;
   font-size: 1rem;
@@ -146,11 +100,6 @@ body {
 .main-background p a {
   color: #ddd;
   text-decoration: underline;
-  font-size: 1rem;
-}
-
-.main-background p a:hover {
-  color: #fff;
 }
 
 .main-text {
@@ -199,17 +148,11 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
   transition: background-color 0.3s;
 }
 
 .card-button:hover {
   background-color: var(--hover-color);
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .statistics-bar {
@@ -226,7 +169,6 @@ body {
   transition: transform 0.3s;
   border-radius: 8px;
   text-align: center;
-  width: 100%;
   max-width: 200px;
 }
 
@@ -235,11 +177,6 @@ body {
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 10px;
-}
-
-.statistics p {
-  color: #333;
-  font-size: 1rem;
 }
 
 .statistics:hover {
@@ -269,25 +206,13 @@ body {
   background-color: #fff;
 }
 
-.categories-section h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.categories-section p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 40px;
-}
-
 .categories-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
-.categories {
+.category {
   display: flex;
   align-items: center;
   border: 1px solid var(--border-color);
@@ -297,34 +222,23 @@ body {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.categories img {
+.category img {
   width: 60px;
   height: 60px;
   margin-right: 20px;
-  object-fit: cover;
   border-radius: 50%;
 }
 
-.categories p {
-  margin: 0;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
-}
-
-.categories:hover {
+.category:hover {
   transform: translateY(-5px);
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .second-background {
-  position: relative;
   background-image: url("pictures/background-2-img.webp");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   height: 80vh;
-  max-height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -333,25 +247,10 @@ body {
 }
 
 .text-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  max-width: 600px;
-  padding: 20px;
   background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
   border-radius: 8px;
-}
-
-.text-content h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.text-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
+  max-width: 600px;
 }
 
 .fixhub-button {
@@ -361,7 +260,6 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1rem;
   transition: background-color 0.3s;
 }
 
@@ -378,14 +276,6 @@ body {
 .our-allies h3 {
   font-size: 1.8rem;
   margin-bottom: 10px;
-}
-
-.our-allies p {
-  font-size: 1rem;
-  color: #666;
-  max-width: 800px;
-  margin: 0 auto;
-  line-height: 1.6;
 }
 
 .allies-section {
@@ -407,10 +297,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .allies-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-
   .logotype {
     width: 60px;
     height: 60px;
@@ -421,45 +307,26 @@ body {
     align-items: center;
   }
 
-  .navigation-block nav a {
-    margin-bottom: 10px;
-    font-size: 16px;
-  }
-
   .search-container {
     width: 100%;
     margin-top: 10px;
   }
 
-  .features-section {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  .features-section,
+  .allies-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   .second-background {
     height: 50vh;
-    max-height: 400px;
   }
 
   .text-content h2 {
     font-size: 2rem;
   }
 
-  .text-content h3 {
-    font-size: 1.2rem;
-  }
-
   .fixhub-button {
     padding: 10px 20px;
     font-size: 0.9rem;
-  }
-
-  .allies-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-
-  .categories img {
-    width: 50px;
-    height: 50px;
-    margin-right: 15px;
   }
 }
