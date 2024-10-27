@@ -11,10 +11,9 @@
     />
   </head>
   <body>
-    <!-- Header Section -->
     <header class="navigation-block" role="banner">
       <nav role="navigation" aria-label="Main navigation">
-        <a href="#home" class="logo-link">
+        <a href="#home" class="logo-link" aria-label="FixIt Homepage">
           <img
             class="logotype"
             src="pictures/logotype.png"
@@ -23,9 +22,19 @@
           />
         </a>
         <ul class="nav-links">
-          <li><a href="#services">Our Services</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contacts">Contacts</a></li>
+          <li>
+            <a href="#services" aria-label="Navigate to Our Services"
+              >Our Services</a
+            >
+          </li>
+          <li>
+            <a href="#about" aria-label="Learn more About Us">About Us</a>
+          </li>
+          <li>
+            <a href="#contacts" aria-label="View Contact Information"
+              >Contacts</a
+            >
+          </li>
         </ul>
         <div class="search-container">
           <label for="search-input" class="sr-only">Search</label>
@@ -33,12 +42,12 @@
             id="search-input"
             type="text"
             placeholder="Search site content"
+            aria-label="Search the site content"
           />
         </div>
       </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="main-background" id="home">
       <h1>Explore a World of Repair</h1>
       <div class="search-bar">
@@ -51,16 +60,14 @@
       <p><a href="#categories-section">or explore categories</a></p>
     </section>
 
-    <!-- Main Text Section -->
     <section class="main-text">
-      <h1>Never Take Broken for an Answer</h1>
+      <h2>Never Take Broken for an Answer</h2>
       <p>
         Get the instructions you need with quality repair parts, tools, and the
         expertise of a robust community.
       </p>
     </section>
 
-    <!-- Features Section -->
     <section class="features-section" id="services">
       <div class="card">
         <img
@@ -109,7 +116,6 @@
       </div>
     </section>
 
-    <!-- Statistics Bar -->
     <section class="statistics-bar">
       <div class="statistics">
         <h3>112,646</h3>
@@ -129,7 +135,6 @@
       </div>
     </section>
 
-    <!-- Repair Guides Section -->
     <section class="repair-guides">
       <h2>Repair Guides for Everything, Written by Everyone</h2>
       <p>
@@ -138,7 +143,6 @@
       </p>
     </section>
 
-    <!-- Categories Section -->
     <section class="categories-section" id="categories-section">
       <div class="categories-grid">
         <div class="category">
@@ -220,7 +224,6 @@
       </div>
     </section>
 
-    <!-- FixHub Section -->
     <section class="second-background">
       <div class="text-content">
         <h2>Repair Anywhere, Anytime</h2>
@@ -231,7 +234,6 @@
       </div>
     </section>
 
-    <!-- Allies Section -->
     <section class="our-allies">
       <h3>Our Allies</h3>
       <p>
@@ -270,7 +272,6 @@
       </div>
     </section>
 
-    <!-- Footer Section -->
     <footer class="footer">
       <div class="footer-columns">
         <div>
