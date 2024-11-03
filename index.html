@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FixIt - Your Electronics Store</title>
+    <title>FixIt - Your Electronics Repair Partner</title>
     <link rel="stylesheet" href="style.css" />
     <meta
       name="description"
-      content="Find the latest laptops, tablets, and gadgets at FixIt. Shop quality electronics with expert support and warranty."
+      content="Professional repair services for laptops, tablets, smartphones, and accessories. Trust FixIt for expert repairs with a quality guarantee."
     />
   </head>
   <body>
@@ -22,7 +22,9 @@
           />
         </a>
         <ul class="nav-links">
-          <li><a href="#products" aria-label="View Products">Products</a></li>
+          <li>
+            <a href="#services" aria-label="View Repair Services">Services</a>
+          </li>
           <li><a href="#about" aria-label="Learn About Us">About Us</a></li>
           <li><a href="#contact" aria-label="Get in Touch">Contact</a></li>
         </ul>
@@ -31,7 +33,7 @@
           <input
             id="search-input"
             type="text"
-            placeholder="Search laptops, tablets, accessories"
+            placeholder="Search repair services for laptops, tablets, smartphones"
             aria-label="Search the site content"
           />
         </div>
@@ -39,74 +41,83 @@
     </header>
 
     <section class="main-background" id="home">
-      <h1>Latest in Laptops & Electronics</h1>
+      <h1>Reliable Repair Services for Your Electronics</h1>
       <div class="search-bar">
         <input
           type="text"
-          placeholder="Search laptops, tablets, and accessories"
-          aria-label="Search for products"
+          placeholder="Search repair options for laptops, tablets, and smartphones"
+          aria-label="Search for repair services"
         />
       </div>
-      <p><a href="#categories-section">Explore Categories</a></p>
+      <p><a href="#categories-section">Explore Repair Services</a></p>
     </section>
 
     <section class="main-text">
-      <h2>Upgrade Your Tech with FixIt</h2>
+      <h2>Expert Repairs for Laptops, Tablets, and More</h2>
       <p>
-        Discover a wide range of electronics, from top-notch laptops to
-        essential accessories, all designed to elevate your digital experience.
+        FixIt offers professional repair services for a wide range of
+        electronics, from laptops to essential accessories, ensuring quality and
+        longevity.
       </p>
     </section>
 
-    <!-- Products Section -->
-    <section class="features-section" id="products">
+    <!-- Services Section -->
+    <section class="features-section" id="services">
       <div class="card">
-        <img src="pictures/laptop.jpg" alt="Modern laptop" loading="lazy" />
-        <h3>High-Performance Laptops</h3>
+        <img
+          src="pictures/laptop_repair.jpg"
+          alt="Laptop repair service"
+          loading="lazy"
+        />
+        <h3>Laptop Repair Services</h3>
         <p>
-          Shop the latest laptops with powerful processors, advanced graphics,
-          and long battery life.
+          Comprehensive repair services for all types of laptops, including
+          hardware upgrades and software troubleshooting.
         </p>
-        <button class="card-button" aria-label="Browse Laptops">
-          Browse Laptops
-        </button>
-      </div>
-      <div class="card">
-        <img src="pictures/tablet.jpg" alt="Tablet device" loading="lazy" />
-        <h3>Tablets & Accessories</h3>
-        <p>
-          From tablets to smart accessories, find everything you need for mobile
-          productivity.
-        </p>
-        <button class="card-button" aria-label="Shop Tablets">
-          Shop Tablets
+        <button class="card-button" aria-label="Learn about Laptop Repairs">
+          Learn More
         </button>
       </div>
       <div class="card">
         <img
-          src="pictures/desktop.jpg"
-          alt="Desktop setup with accessories"
+          src="pictures/tablet_repair.jpg"
+          alt="Tablet repair service"
           loading="lazy"
         />
-        <h3>Desktop & Accessories</h3>
+        <h3>Tablet Repair & Accessories</h3>
         <p>
-          Enhance your workspace with the latest in desktop technology and
-          must-have accessories.
+          Repair services for tablets, including screen replacements, battery
+          fixes, and accessory installations.
         </p>
-        <button class="card-button" aria-label="Shop Desktops">
-          Shop Desktops
+        <button class="card-button" aria-label="Learn about Tablet Repairs">
+          Learn More
+        </button>
+      </div>
+      <div class="card">
+        <img
+          src="pictures/phone_repair.jpg"
+          alt="Smartphone repair service"
+          loading="lazy"
+        />
+        <h3>Smartphone Repairs</h3>
+        <p>
+          Reliable repairs for smartphones, covering everything from screen
+          replacements to internal diagnostics.
+        </p>
+        <button class="card-button" aria-label="Learn about Smartphone Repairs">
+          Learn More
         </button>
       </div>
     </section>
 
     <section class="statistics-bar">
       <div class="statistics">
-        <h3>500+</h3>
-        <p>Product Categories</p>
+        <h3>10,000+</h3>
+        <p>Devices Repaired</p>
       </div>
       <div class="statistics">
-        <h3>1200+</h3>
-        <p>Satisfied Customers</p>
+        <h3>4,500+</h3>
+        <p>Happy Customers</p>
       </div>
       <div class="statistics">
         <h3>24/7</h3>
@@ -114,15 +125,15 @@
       </div>
       <div class="statistics">
         <h3>100%</h3>
-        <p>Quality Guarantee</p>
+        <p>Quality Assurance</p>
       </div>
     </section>
 
     <section class="repair-guides">
-      <h2>Your One-Stop Electronics Shop</h2>
+      <h2>Trust FixIt for All Your Repair Needs</h2>
       <p>
-        At FixIt, we ensure top-quality products, expert advice, and a wide
-        selection of electronics for every need.
+        From diagnostics to repairs, FixIt is your one-stop solution for
+        reliable and efficient electronic repairs.
       </p>
     </section>
 
@@ -130,57 +141,58 @@
     <section class="categories-section" id="categories-section">
       <div class="categories-grid">
         <div class="category">
-          <img src="pictures/laptops.jpg" alt="Laptops" />
+          <img src="pictures/laptop_category.jpg" alt="Laptops Repair" />
           <p>Laptops</p>
         </div>
         <div class="category">
-          <img src="pictures/tablets.jpg" alt="Tablets" />
+          <img src="pictures/tablet_category.jpg" alt="Tablets Repair" />
           <p>Tablets</p>
         </div>
         <div class="category">
-          <img src="pictures/accessories.jpg" alt="Accessories" />
-          <p>Accessories</p>
-        </div>
-        <div class="category">
-          <img src="pictures/smartphones.jpg" alt="Smartphones" />
+          <img
+            src="pictures/smartphone_category.jpg"
+            alt="Smartphones Repair"
+          />
           <p>Smartphones</p>
         </div>
         <div class="category">
-          <img src="pictures/monitors.jpg" alt="Monitors" />
-          <p>Monitors</p>
-        </div>
-        <div class="category">
-          <img src="pictures/peripherals.jpg" alt="Peripherals" />
-          <p>Peripherals</p>
+          <img
+            src="pictures/accessories_category.jpg"
+            alt="Accessories Repair"
+          />
+          <p>Accessories</p>
         </div>
       </div>
     </section>
 
     <section class="second-background">
       <div class="text-content">
-        <h2>Shop Anywhere, Anytime</h2>
-        <h3>Exclusive online deals on electronics.</h3>
-        <button class="fixhub-button" aria-label="Start Shopping">
-          Start Shopping Now
+        <h2>Convenient and Reliable Repairs</h2>
+        <h3>High-quality repair services available online and in-store.</h3>
+        <button class="fixhub-button" aria-label="Get Your Device Repaired">
+          Get Started
         </button>
       </div>
     </section>
 
     <section class="our-allies">
-      <h3>Our Partners</h3>
+      <h3>Our Repair Partners</h3>
       <p>
-        FixIt collaborates with trusted manufacturers to bring you the best in
-        technology.
+        FixIt collaborates with trusted brands to provide certified repair
+        services with authentic parts.
       </p>
     </section>
 
     <section class="allies-section">
       <div class="allies-grid">
-        <img src="pictures/google.jpg" alt="Google, one of our partners" />
+        <img
+          src="pictures/google.jpg"
+          alt="Google, one of our repair partners"
+        />
         <img src="pictures/valve.jpg" alt="Valve, technology repair partner" />
         <img
           src="pictures/lenovo.jpg"
-          alt="Lenovo, our hardware repair partner"
+          alt="Lenovo, our laptop repair partner"
         />
         <img
           src="pictures/microsoft.jpg"
@@ -188,7 +200,7 @@
         />
         <img
           src="pictures/motorola.jpg"
-          alt="Motorola, repair solutions partner"
+          alt="Motorola, smartphone repair solutions partner"
         />
         <img
           src="pictures/hp.jpg"
@@ -200,7 +212,7 @@
         />
         <img
           src="pictures/patagonia.jpg"
-          alt="Patagonia, apparel repair partner"
+          alt="Patagonia, trusted for accessory repairs"
         />
       </div>
     </section>
@@ -225,7 +237,7 @@
             <li><a href="#news">News</a></li>
             <li><a href="#participate">Participate</a></li>
             <li><a href="#wholesale">Pro Wholesale</a></li>
-            <li><a href="#locator">Retail Locator</a></li>
+            <li><a href="#locator">Repair Locator</a></li>
             <li><a href="#manufacturers">For Manufacturers</a></li>
           </ul>
         </div>
@@ -239,11 +251,11 @@
           </ul>
         </div>
         <div>
-          <h4>Stay in the loop</h4>
-          <p>Get the latest updates and offers!</p>
+          <h4>Stay Updated</h4>
+          <p>Get the latest updates on repair services and offers!</p>
           <input type="email" placeholder="Enter your email" />
           <button>Subscribe</button>
-          <p><a href="#privacy-policy">Let me read it first!</a></p>
+          <p><a href="#privacy-policy">Read Privacy Policy</a></p>
         </div>
       </div>
       <div class="footer-bottom">
