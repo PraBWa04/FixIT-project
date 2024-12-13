@@ -125,11 +125,11 @@ a:hover {
 .main-background h1 {
   font-size: clamp(2.5rem, 5vw, 3rem);
   margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.7); /* Напівпрозорий чорний фон */
-  color: white; /* Білий текст */
-  padding: 10px 20px; /* Відступи навколо тексту */
-  border-radius: 8px; /* Згладжені краї */
-  display: inline-block; /* Фон тільки під текстом */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 .main-background .search-bar input {
@@ -142,13 +142,13 @@ a:hover {
 }
 
 .main-background p a {
-  background-color: rgba(0, 0, 0, 0.7); /* Напівпрозорий чорний фон */
-  color: white; /* Білий текст */
-  padding: 5px 15px; /* Відступи навколо тексту */
-  border-radius: 8px; /* Згладжені краї */
-  text-decoration: none; /* Забрати підкреслення */
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px 15px;
+  border-radius: 8px;
+  text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s; /* Ефект при наведенні */
+  transition: background-color 0.3s;
 }
 
 .main-text {
