@@ -30,3 +30,7 @@ This project was created to demonstrate web development skills and practices, in
 4. **Services Section**: Highlights major services with clear descriptions and relevant visuals.
 5. **Partner Logos**: Displays a grid of logos from trusted partners to build credibility.
 6. **Footer Section**: Provides contact information, social media links, and additional resources.
+
+## Link
+
+https://prabwa04.github.io/FixIT-project/
